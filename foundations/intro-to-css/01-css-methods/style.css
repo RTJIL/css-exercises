@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: red;
+    color: white;
+    font-weight: 100;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    background-color: green;
+    font-size: 18px;
+}
+
+button {
+    background-color: orange;
+    font-size: 18px;
+}
