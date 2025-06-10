@@ -34,15 +34,14 @@ button {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform-origin: center;
-  transform: translate(-50%, -50%);
+  /* transform-origin: center; */
+  transform: translate(-50%, -100%);
   pointer-events: none;
   opacity: 0%;
   text-align: center;
 
-  transition: opacity .3s ease, translate .5s ease;
-  transition-behavior: allow-discrete;
-  translate: 0 -25vh;
+  /*+*/
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease;
 }
 
 .popup-modal p {
@@ -55,14 +54,15 @@ button {
   inset: 0;
   background: #000;
   opacity: 0%;
-  transition: opacity 0.5s linear;
-  transition-behavior: allow-discrete;
+  /*+*/
+  transition: opacity 0.5s ease-in-out;
 }
 
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
-  translate: 0;
+  /*+*/
+  transform: translate(-50%, -50%);
 }
 
 .backdrop.show {
